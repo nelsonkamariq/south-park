@@ -1,0 +1,11 @@
+FROM python:slim
+
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+ENV TZ America/New_York
+
+RUN mkdir -p /src
+
+WORKDIR /src
+
+ENTRYPOINT ["/bin/bash"]
